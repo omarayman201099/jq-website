@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: unset;
+}
+
+header{
+    width: 100%;
+    height: 660px;
+    background-image: url(../imge/events-heavenly-header.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    color: white;
+    position: relative;
+}
+
+.conteainer{
+    background-color: rgba(255, 0, 0, .4);
+    height: 660px;/
+}
+
+.off-screen-menu {
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    max-width: 350px;
+    position: fixed;
+    top: 0;
+    left: -450px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;    
+    justify-content: center;
+    text-align: center;
+    font-size: 3rem;
+    transition: .3s ease;
+   
+}
+.off-screen-menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: .4s;
+
+}
+.off-screen-menu ul li a:hover {
+    text-decoration: none;
+    color: red;
+
+}
+
+.off-screen-menu ul li {
+    padding: 20px;
+    font-size: 35px;
+    font-weight: 300;
+}
+
+
+.off-screen-menu.active {
+    left: 0;
+}
+.off-screen-menu-2{
+display: none;
+}
+
+.ham-menu-2{
+    display: block;
+}
+
+
+/* nav */
+nav {
+    padding: 1rem;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    right: 95%;
+}
+
+
+
+/* ham menu */
+.ham-menu {
+    height: 50px;
+    width: 40px;
+    margin-left: auto;
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    left: 10rem;
+}
+.ham-menu.active{
+    display: none;
+}
+
+
+.ham-menu span {
+    height: 5px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 25px;
+    position: absolute;
+    
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
+}
+.ham-menu span:nth-child(1) {
+    top: 25%;
+}
+.ham-menu span:nth-child(3) {
+    top: 75%;
+}
+.ham-menu.active span {
+    background-color: white;
+}
+.ham-menu.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.ham-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+.ham-menu.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+
+ .closebtn {
+    position: relative;
+    top: 0;
+    text-decoration: none;
+    left: 15rem;
+    font-size: 50px;
+    margin-left: 50px;
+    color: #fff;
+    transition: .4s;
+}
+.closebtn:hover{
+    color: red;
+}
+
+#About{
+   
+    padding-bottom: 50px;
+}
+
+
+
+
+.home-content{
+    display: flex;
+    align-content: center;
+    position: absolute;
+    top: 50%;
+    align-items: center;
+    flex-direction: column;
+    left: 50%;
+    transform: translate(-50%);
+    color: #fff;
+    justify-content: center;
+}
+
+.home-content h1{
+    font-size: 70px;
+}
+
+
+.accordian{
+	width:600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+    flex-direction: column;
+}
+
+.accordian .card{
+	
+
+	float: left;
+	width: 100%;
+    border: none;
+}
+.accordian .card .card-header h3{
+	cursor: pointer;
+	color:#ffffff;
+	position: relative;
+	background-color: #E68285;
+	margin:0;
+	padding:15px 20px;
+
+}
+.accordian .card .card-header {
+	position: relative;
+}
+.accordian .card .card-header span{
+	position: absolute;
+	right:20px;
+	top:12px;
+	height:25px;
+	width:25px;
+	color:#3343a2;
+	background-color: #ffffff;
+	border-radius:50%;
+	text-align: center;
+	line-height:25px;
+	font-size:13px;
+}
+
+.accordian .card .card-body{
+	padding:20px;
+}
+.accordian .card .card-body{
+	display: none;
+}
+/*open one card by default*/
+.accordian .card:nth-child(1) .card-body{
+ display: block;
+}
+.accordian .card .card-body p{
+	font-size: 15px;
+	line-height: 24px;
+	color:#444444;
+	margin:0px;
+}
+
+
+
+
+
+.card {
+        --bs-card-border-color: none;
+        --bs-card-cap-padding-x: none; 
+}
+
+
+
+#count
+{
+   
+    background-image: url(../imge/invitation-2508607__340.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    position: relative;
+    height: 330px;
+    
+    
+}
+
+
+.count-overlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(214, 46, 51 , 0.6);
+    color: white;
+}
+
+.container
+{
+    padding: 100px 0px;
+}
+
+.tim
+{
+    
+    padding: 50px;
+    border: 1px solid #FFF;
+    font-weight: 500;
+    font-size: 30px;
+}
+.icons li{
+    padding: 10px;
+}
+.icons :hover {
+background-color: red;
+color: #FFF;
+}
+
+@media only screen and (max-width: 600px) {
+    .ham-menu{
+    position: relative;
+    top: -20rem;
+    left: 5rem;
+    }
+
+    .home-content h1{
+       text-align: center;
+       font-size: 50px;
+        
+    }
+
+.accordian{
+    width: 100%;
+}
+.body-contet{
+    display: flex;
+    flex-direction: column;
+
+}
+.title h2{
+    text-align: center;
+    font-size: 25px;
+}
+#count{
+    overflow: hidden;
+}
+}
+
+.body-contet{
+    display: flex;
+
+}
+@media only screen and (max-width: 900px) {
+    .ham-menu{
+    position: relative;
+    top: -20rem;
+    left: 5rem;
+    }
+
+    .home-content h1{
+       text-align: center;
+       font-size: 50px;
+        
+    }
+
+.accordian{
+    width: 100%;
+}
+.body-contet{
+    display: flex;
+    flex-direction: column;
+
+}
+.title h2{
+    text-align: center;
+    font-size: 25px;
+}
+#count{
+    overflow: hidden;
+}
+}
+
+.body-contet{
+    display: flex;
+
+}
